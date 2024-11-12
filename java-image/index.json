@@ -1,0 +1,32 @@
+{
+    "title": "Wrap a java app in a container",
+    "description": "Run spring app in docker",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Create the docker file",
+          "text": "step1/text.md"
+        },
+        {
+            "title": "Create the image",
+            "text": "step2/text.md"
+        },
+        {
+            "title": "Run the image",
+            "text": "step3/text.md"
+        }
+      ],
+      "assets": {
+      "host01": [
+        {"file": "containerDemo-0.0.1-SNAPSHOT.jar", "target": "~/", "chmod": "+x"}
+        ]
+      }
+
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }
