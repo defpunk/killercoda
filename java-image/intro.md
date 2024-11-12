@@ -1,0 +1,1 @@
+Create a docker image that runs a spring app that has been supplied to us as a jar file
