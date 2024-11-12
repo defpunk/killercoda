@@ -1,0 +1,19 @@
+{
+    "title": "Hello world",
+    "description": "Run hello world container",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Run the docker command",
+          "text": "step1/text.md",
+          "verify": "step1/verify.sh"
+        }
+      ]
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }
