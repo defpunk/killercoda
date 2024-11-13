@@ -19,9 +19,8 @@ Documentation - https://docs.docker.com/engine/containers/run/.
 <details><summary>Tip</summary>
 <br>
 
-```plain
 docker run is the command the image name is the argument
-```
+
 
 </details>
 

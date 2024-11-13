@@ -1,11 +1,15 @@
 {
-    "title": "Hello world",
+    "title": "Getting started",
     "description": "Run hello world container",
     "details": {
       "intro": {
         "text": "intro.md"
       },
       "steps": [
+        {
+          "title": "Get help",
+          "text": "step0/text.md"
+        },
         {
           "title": "Run the docker command",
           "text": "step1/text.md"

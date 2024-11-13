@@ -11,12 +11,24 @@
           "text": "step1/text.md"
         },
         {
-            "title": "Create the image",
+            "title": "Build a docker image",
             "text": "step2/text.md"
         },
         {
-            "title": "Run the image",
+            "title": "Run a container based on the image",
             "text": "step3/text.md"
+        },
+        {
+          "title": "Run the container in the background",
+          "text": "step4/text.md"
+        },
+        {
+          "title": "View the container logs",
+          "text": "step4/text.md"
+        },
+        {
+          "title": "Stopping, Restarting and Tidy up",
+          "text": "step6/text.md"
         }
       ],
       "assets": {
