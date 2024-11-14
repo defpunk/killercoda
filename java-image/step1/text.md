@@ -51,7 +51,7 @@ Create the Dockerfile and add the contents below
 FROM openjdk:19-jdk
 COPY containerDemo-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
-```
+```{{copy}}
 
 
 This Dockerfile is very simple, but it is all you need to run a Spring Boot app with no frills: just Java and a JAR file. The jar file containing the application is copied (by the COPY command) into the container as app.jar, which is run in the ENTRYPOINT. The array form of the Dockerfile ENTRYPOINT is used so that there is no shell wrapping the Java process.

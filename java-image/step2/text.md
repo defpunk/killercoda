@@ -13,7 +13,7 @@ the documentation to findout how to tag an image.
 <br>
 <details><summary>Tip</summary>
 <br>
-Use the docker buildx build --help command to see how to give the image a name, in docker images are tagged rather than named.
+Use the docker build --help command to see how to give the image a name, in docker images are tagged rather than named.
 </details>
 
 <br>
@@ -21,7 +21,7 @@ Use the docker buildx build --help command to see how to give the image a name, 
 <br>
 
 ```plain
-docker buildx build -t demo-app .
+docker build -t demo-app .
 ```{{exec}}
 
 

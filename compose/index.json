@@ -1,0 +1,52 @@
+{
+    "title": "Docker compose example",
+    "description": "Use docker compose to orchestrate a Python applicatiomn that uses a redis backend, both running as docker containers",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create the docker fille for the Flask application",
+                "text": "step1/text.md"
+            },
+            {
+                "title": "Create the docker compose file",
+                "text": "step2/text.md"
+            },
+            {
+                "title": "Running the application",
+                "text": "step3/text.md"
+            },
+            {
+                "title": "Stopping the appication",
+                "text": "step4/text.md"
+            },
+            {
+                "title": "Add a volume",
+                "text": "step5/text.md"
+            },
+            {
+                "title": "Experiment",
+                "text": "step6/text.md"
+            }
+        ],
+        "assets": {
+            "host01": [
+                {
+                    "file": "app.py",
+                    "target": "~/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "requirements.txt",
+                    "target": "~/",
+                    "chmod": "+r"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}
