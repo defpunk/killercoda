@@ -1,2 +1,3 @@
 In this tutorial we'll build a simple Python web application running on Docker Compose. The application uses the Flask framework and maintains a hit counter in Redis. While the sample uses Python, the concepts demonstrated here should be understandable even if you’re not familiar with it. It's based on Mark Bradley's tutorial that can be found here - https://github.com/braddle/osf-resources/tree/main/006-containers/ComposeDemo
 
+NB. The Killercoda platform is using an older version of docker so you'll see the docker compose commands shown as docker-compose in real life please use an upto date version and the docker compose syntax.

@@ -16,7 +16,7 @@ Take a look the docker compose reference guide and see if you can create a docke
 <br>
 <details><summary>Tip</summary>
 <br>
-Each part of the applciation is defined as a serice, this allows us to scale each part of the application by having more than one container instance for each type. Each service is nested under the services tag in the yaml, the key used is the name of the service and can be anything. The example below shows a webapp service that is built from a Dockerfile that's found in the same directory as the docker-compose.yml. The redis container doesn't need any customisation the best image to use is redis:alpine.  
+Each part of the applciation is defined as a service, this allows us to scale each part of the application by having more than one container instance for each type. Each service is nested under the services tag in the yaml, the key used is the name of the service and can be anything. The example below shows a webapp service that is built from a Dockerfile that's found in the same directory as the docker-compose.yml. The redis container doesn't need any customisation the best image to use is redis:alpine.  
 
 ```
 services:
@@ -34,7 +34,7 @@ services:
 Create a docker-compose.yml file, copy the content below into it and save it.
 
 ```plain
-version: "3.9"
+version: "3.3"
 services:
   web:
     build: .

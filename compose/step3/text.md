@@ -22,7 +22,7 @@ Whats the difference between start and up?
 Docker compose up creates and starts the containers while docker compose start is used to restart containers that have been stopped using docker compose stop
 
 ```plain
-docker compose up
+docker-compose up
 ```{{exec}}
 
 

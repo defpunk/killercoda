@@ -22,12 +22,12 @@ You can use the same approach as stopping docker in the forground. Or try openin
 The updated docker-compose.yml should look like this
 
 ```
-version: "3.9"
+version: "3.3"
 services:
   web:
     build: .
     ports:
-      - "8000:5000"
+      - "8080:5000"
     volumes:
       - .:/code
     environment:
@@ -39,6 +39,8 @@ services:
 The new volumes key mounts the project directory (current directory) on the host to /code inside the container, allowing you to modify the code on the fly, without having to rebuild the image. The environment key sets the FLASK_ENV environment variable, which tells flask run to run in development mode and reload the code on change. This mode should only be used in development.
 
 Re-build and run the app with Compose From your current directory, type docker compose up to build the app with the updated Compose file, and run it.
+
+`docker-compose up`{{exec}}
 
 Update the application. Because the application code is now mounted into the container using a volume, you can make changes to its code and see the changes instantly, without having to rebuild the image. Change the greeting in app.py and save it. For example, change the Hello World! message to Hello from Docker!:  
 
