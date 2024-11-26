@@ -1,4 +1,4 @@
-Running the container
+# Running the container
 
 <br>
 <details><summary>Info</summary>
@@ -24,9 +24,9 @@ docker run -p 8080:8080 demo-app
 ```{{exec}}
 
 
-Congratulations! You have run a Docker container for a Spring Boot application! By default, Spring Boot applications run on port 8080 inside the container, and we mapped that to the same port on the host by using -p on the command line.
+Congratulations! You have run a Docker container for a Spring Boot application! By default, Spring Boot applications run on port 8080 inside the container, and we mapped that to the same port on the host by using -p on the command line.  
 
-In the Killercoda terminal tab you'll see the log output of the running container, if you want to see the Web UI of the app click on the small Hamburger icon in the top right conrner of the terminal. Choose the Traffic/Ports option and then on the Traffic Port Accessor page click the 8080 button. Take deep breath and be amazed at the simple beauty of the Hello Docker World page.
+In the Killercoda terminal tab you'll see the log output of the running container, if you want to see the Web UI of the app click on the small Hamburger icon in the top right conrner of the terminal. Choose the Traffic/Ports option and then on the Traffic Port Accessor page click the 8080 button. Take deep breath and be amazed at the simple beauty of the Hello Docker World page.  
 
 Once you've soaked in its goodness you can stop the application running with ctrl-c.
 

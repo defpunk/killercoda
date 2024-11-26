@@ -1,7 +1,6 @@
 # See the application logs
 
-When docker applications run in the background we get the benefit of not locking up a terminal window, however we can no longer see the 
-logs. You can still view the logs of the application if you need to by using the logs command.
+When docker applications run in the background we get the benefit of not locking up a terminal window, however we can no longer see the logs. You can still view the logs of the application if you need to by using the logs command.
 
 <br>
 <details><summary>Info</summary>
@@ -25,7 +24,11 @@ If you used the example command the container name is my-demo, otherwise docker 
 docker logs my-demo
 ```{{exec}}
 
-Replace my-demo with your container name if you you didn't specify a name when starting the container in detached mode
+NB. Replace my-demo with your container name if you you didn't specify a name when starting the container in detached mode. To find out the name run
+
+```plain
+docker ps
+```{{exec}}
 
 
 </details>

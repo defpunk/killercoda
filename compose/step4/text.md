@@ -19,4 +19,8 @@ You can use the same approach as stopping docker in the forground. Or try openin
 <details><summary>Solution</summary>
 
 Either create a second tab and run `docker-compose down` or press CTRL+C in the original terminal where you started the app.
+
+```
+docker compose down
+```{{exec}}
 </details>

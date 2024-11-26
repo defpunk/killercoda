@@ -5,9 +5,9 @@ In our final step we want to stop, then start the container. Then stop it again 
 <br>
 <details><summary>Info</summary>
 <br>
-You can stop the container running using the stop or kill commands.
-The start command can be used for restarting containers
-The remove command can be used to clean up
+You can stop the container running using the stop or kill commands.  
+The start command can be used for restarting containers.  
+The remove command can be used to clean up.  
 </details>
 
 <br>
@@ -33,7 +33,7 @@ docker ps -a
 ```{{exec}}
 Start
 ```plain
-docker stop my-demo
+docker start my-demo
 ```{{exec}}
 Stop
 ```plain

@@ -3,7 +3,7 @@
 <br>
 <details><summary>Info</summary>
 <br>
-The compose subcommand allow us to work with multicontainer applications, can you workout how to start ours?
+The compose subcommand allow us to work with multicontainer applications, can you workout how to start ours?  
 
 See [Docker compose](https://docs.docker.com/reference/cli/docker/compose)
 

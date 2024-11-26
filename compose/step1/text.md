@@ -5,9 +5,9 @@
 <details><summary>Info</summary>
 <br>
 
-This example is more sophisticated than the previous Java application version. As well as copying the supplied files in to the image it also runs some setup processes.
+This example is more sophisticated than the previous Java application version. As well as copying the supplied files in to the image it also runs some setup processes.  
 
-Here's what we want to include in the docker file
+Here's what we want to include in the docker file.  
 
 * Build an image starting with the Python 3.7 image. (python:3.7-alpine)
 * Set the working directory to /code.
@@ -19,16 +19,15 @@ Here's what we want to include in the docker file
 * Set the default command for the container to flask run.
 
 
-
-FROM <image> - this specifies the base image that the build will extend.
-WORKDIR <path> - this instruction specifies the "working directory" or the path in the image where files will be copied and commands will be executed.
-COPY <host-path> <image-path> - this instruction tells the builder to copy files from the host and put them into the container image.
-RUN <command> - this instruction tells the builder to run the specified command.
-ENV <name> <value> - this instruction sets an environment variable that a running container will use.
+FROM <image> - this specifies the base image that the build will extend.  
+WORKDIR <path> - this instruction specifies the "working directory" or the path in the image where files will be copied and commands will be executed.  
+COPY <host-path> <image-path> - this instruction tells the builder to copy files from the host and put them into the container image.  
+RUN <command> - this instruction tells the builder to run the specified command.  
+ENV <name> <value> - this instruction sets an environment variable that a running container will use.  
 EXPOSE <port-number> - this instruction sets configuration on the image that indicates a port the image would like to expose.
-USER <user-or-uid> - this instruction sets the default user for all subsequent instructions.
-CMD ["<command>", "<arg1>"] - this instruction sets the default command a container using this image will run.
-ENTRYPOINT ["<executable>", "<param1>", "<param2>"] - An ENTRYPOINT allows you to configure a container that will run as an executable. Once the container is created this is the command that will run.
+USER <user-or-uid> - this instruction sets the default user for all subsequent instructions.  
+CMD ["<command>", "<arg1>"] - this instruction sets the default command a container using this image will run.  
+ENTRYPOINT ["<executable>", "<param1>", "<param2>"] - An ENTRYPOINT allows you to configure a container that will run as an executable. Once the container is created this is the command that will run.  
 
 <br>
 To read through all of the instructions or go into greater detail, check out the [Dockerfile reference](https://docs.docker.com/reference/dockerfile/).

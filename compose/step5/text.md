@@ -12,7 +12,7 @@ See [Volumes](https://docs.docker.com/engine/storage/volumes/)
 <br>
 <details><summary>Tip</summary>
 <br>
-You can use the same approach as stopping docker in the forground. Or try opening a second tab and running a docker compose down command
+The volume belongs to the web service. You can add envronment variables for services via the docker-compose.yml. 
 </details>
 
 
@@ -36,7 +36,7 @@ services:
     image: "redis:alpine"
 ```{{copy}}
 
-The new volumes key mounts the project directory (current directory) on the host to /code inside the container, allowing you to modify the code on the fly, without having to rebuild the image. The environment key sets the FLASK_ENV environment variable, which tells flask run to run in development mode and reload the code on change. This mode should only be used in development.
+The new volumes key mounts the project directory (current directory) on the host to /code inside the container, allowing you to modify the code on the fly, without having to rebuild the image. The environment key sets the FLASK_ENV environment variable, which tells flask run to run in development mode and reload the code on change. This mode should only be used in development.  
 
 Re-build and run the app with Compose From your current directory, type docker compose up to build the app with the updated Compose file, and run it.
 

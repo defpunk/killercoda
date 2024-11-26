@@ -5,7 +5,7 @@
 <details><summary>Info</summary>
 <br>
 
-Docker compose is used to define and run multi-container applications. We'll create an application that is made up from two containers one that is built from the Dockerfile created in the last step and the second a default redis image. It will also map the exposed 5000 port to 8080 so we can check the output easily on the KillerCoda platform.
+Docker compose is used to define and run multi-container applications. We'll create an application that is made up from two containers one that is built from the Dockerfile created in the last step and the second a default Redis image. It will also map the exposed 5000 port to 8080 so we can check the output easily on the KillerCoda platform.
 
 Take a look the docker compose reference guide and see if you can create a docker compose file to make it all work.
 
@@ -33,7 +33,7 @@ services:
 <br>
 Create a docker-compose.yml file, copy the content below into it and save it.
 
-```plain
+```
 version: "3.3"
 services:
   web:
@@ -46,9 +46,9 @@ services:
 
 This Compose file defines two services: web and redis.
 
-Web service
+### Web service
 The web service uses an image that’s built from the Dockerfile in the current directory. It then binds the container and the host machine to the exposed port, 8080. This example service uses the default port for the Flask web server, 5000.
 
-Redis service
+### Redis service
 The redis service uses a public Redis image pulled from the Docker Hub registry.
 </details>
